@@ -8,7 +8,7 @@ RUN apt-get install -yq \
         man-db \
         nano \
         software-properties-common \
-        sudo
+        sudo \
     && locale-gen en_US.UTF-8 \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
 ENV LANG=en_US.UTF-8
