@@ -1,7 +1,7 @@
 FROM buildpack-deps:xenial
 
 ### base ###
-RUN apt-get install -yq \
+RUN apt-get update && apt-get install -yq \
         build-essential \
         htop \
         locales \
